@@ -1,0 +1,4 @@
+en stack: (es una cola donde sacas el ultimo que metes)
+
+enqueue es push
+dequeue es pop
