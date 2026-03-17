@@ -5,7 +5,7 @@
 5. delete en """"""""""""""""""""""""""""""""""""""" true/false, al eliminar un valorx hacemos que se corra la lista.
 	5.1. funcion last
 6. update, cambiar el valor de una posicion
-7. devolver el valor de una posicon x
+7. devolver el valor de una posicon x ///
 8. buscar un valor en la lista -> devuelve true/false o la posicion
 
 
