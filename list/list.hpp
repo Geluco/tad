@@ -17,7 +17,7 @@ int firstElement (list list);
 int lastElement (list list);
 bool addItem (list *list, int item, int position);
 int deleteItem (list *list, int item);
-int update (list *list);
+int update (list *list, int mode, int number, int newItem, int position);
 int returnItem (list list, int position);
 int searchItem(list list, int item);
 

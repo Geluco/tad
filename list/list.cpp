@@ -168,5 +168,29 @@ int deleteItem (list *list, int position) {
 	return 0; 
 }
 
-int update (list *list) { return 0; }
-int searchItem(list list, int item) { return 0; }
+int update (list *list, int mode, int number, int newItem, int position) {
+	// mode if 0 --> change the position by new item
+	// mode if 1 --> change the first number x to show
+	if(mode == 1){
+		for(int k = 0; k < MAX_N; k++){
+			if(list -> vector[k] == number && list -> vectorTF[k] == 1){
+				list -> vector[k] = newItem; 
+				return true;
+			}
+		}
+		return false;
+	}else if(mode == 0 && position >= 0 && position < MAX_N){
+		list -> vector[position] = newItem;
+		list -> vectorTF[position] = 1;
+	}
+
+	return 0; 
+}
+int searchItem(list list, int item) { 
+	for(int k = 0; k < MAX_N; k++){
+		if(list.vector[k] == item && list.vectorTF[k] == 1){
+			return k;
+		}	
+	}
+	return 0; 
+}
